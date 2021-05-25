@@ -1,0 +1,16 @@
+default: &default
+  collation: "utf8mb4_general_ci"
+  encoding:  "utf8mb4"
+  adapter:   "mysql2"
+  username:  "root" # "dev"
+  password:  "ggwp" # "12345678"
+  database:  "api" # "sofia"
+  host:      "localhost" # "localhost"
+  port:      "3306" # "3306"
+  pool:      "100"
+
+development:
+  <<: *default
+
+production:
+  <<: *default
